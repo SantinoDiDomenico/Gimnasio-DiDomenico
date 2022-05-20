@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+$color1: rgb(46, 190, 111);
+$font1:'Anton';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.bg-primary{
+    background-image: url(img/portada1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.presentacion{
+    height: 600px;
+    color:$color1 ;
+    font-family: $font1;
+    letter-spacing: 0.3em;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 0.2em solid orange;
+
+    @mixin text ($text-shadow, $text-align){
+        text-shadow:$text-shadow ;
+        text-align: $text-align;
+
+    }
+
+    h1{
+        font-size: 40px;
+        @include text(-3px 2px rgb(0, 0, 0),center)
+    }
+
+    p{
+        font-size: 10px;
+        @include text (-2px 2px rgba(0, 0, 0, 0.925),center)
+    }
+}
+
+.services{
+    height:300px;
+    background-color: rgb(46, 190, 111);
+    padding-top: 2em;
+    
+}
+
+.servicios{
+
+    width: 100%;
+    height: 156px;
+    background-color: #fff;
+    border: 0.2em solid orange;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+/*index - fin */
+
+/*Entrenamiento - inicio */
+
+.contenedor1{
+    color: $color1;
+    font-family: $font1;
+    letter-spacing: 0.1em;
+}
+
+.tarjetas{
+    width: 100%;
+    height: 100vh;
+}
+
+a{
+    list-style: none;
+    color: $color1;
+}
+
+
+h3{
+    color: $color1;
+    font-family: $font1;
+}
+
+/*Galeria*/
+
+.galeria{
+    margin: 2em;
+}
+
+/*Contacto*/
+.formulario{
+    margin: 1em;
+}
+
+
+
+
+
+footer{
+    background-color: rgb(46, 190, 111);
+    border-top: solid orange;
+    padding: 1em;
+
+    .redes li{
+        width: 50px;
+        margin-right: 1em;
+        list-style: none;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+

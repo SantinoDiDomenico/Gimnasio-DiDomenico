@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bg-primary {
+  background-image: url(img/portada1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.presentacion {
+  height: 600px;
+  color: #2ebe6f;
+  font-family: "Anton";
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-bottom: 0.2em solid orange;
+}
+
+.presentacion h1 {
+  font-size: 40px;
+  text-shadow: -3px 2px black;
+  text-align: center;
+}
+
+.presentacion p {
+  font-size: 10px;
+  text-shadow: -2px 2px rgba(0, 0, 0, 0.925);
+  text-align: center;
+}
+
+.services {
+  height: 300px;
+  background-color: #2ebe6f;
+  padding-top: 2em;
+}
+
+.servicios {
+  width: 100%;
+  height: 156px;
+  background-color: #fff;
+  border: 0.2em solid orange;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+/*index - fin */
+/*Entrenamiento - inicio */
+.contenedor1 {
+  color: #2ebe6f;
+  font-family: "Anton";
+  letter-spacing: 0.1em;
+}
+
+.tarjetas {
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  list-style: none;
+  color: #2ebe6f;
+}
+
+h3 {
+  color: #2ebe6f;
+  font-family: "Anton";
+}
+
+/*Galeria*/
+.galeria {
+  margin: 2em;
+}
+
+/*Contacto*/
+.formulario {
+  margin: 1em;
+}
+
+footer {
+  background-color: #2ebe6f;
+  border-top: solid orange;
+  padding: 1em;
+}
+
+footer .redes li {
+  width: 50px;
+  margin-right: 1em;
+  list-style: none;
+}
+/*# sourceMappingURL=estilos.css.map */
