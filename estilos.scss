@@ -1,156 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Semi+Condensed:ital@1&family=Nunito:wght@500&display=swap');
 
-$color1: rgb(46, 190, 111);
-$font1:'Anton';
+$color1:#00BFA6;
+$color2:#F50057;
+$color3:#F9A826;
+
+$font1:'Anton', sans-serif;
+$font2:'Nunito', sans-serif;
+$font3:'Barlow Semi Condensed', sans-serif;
 
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 
 
+.nav{
+    color: $color1;
+    display: flex;
+    justify-content: space-between;
+    
+    
 
-.bg-primary{
-    background-image: url(img/portada1.jpg);
-    background-position: center;
-    background-size: cover;
+    h3{
+        font-family: $font1;
+        font-size: 50px;
+        color: $color1;
+        
+        span{
+            background:linear-gradient(to right bottom, $color1 ,10%, $color2 );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+        }
+    }
+}
+
+
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: $font3;
+    font-size: 25px;
+    padding: 30px;
+    color:$color1;
+    list-style: none;
+
+
+    li{
+        text-decoration: none;
+    }
+    
+    li:hover{
+        color:#039b87;
+        font-size: 30px;
+        text-decoration: underline $color2;
+        
+    }
+}
+
+
+
+/*PRESENTACION*/
+
+h1{
+    text-align: center;
+    font-family: $font1;
+    font-size: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p{
+    text-align: center;
+    font-family: $font3;
+    font-size: 35px;
+
 }
 
 .presentacion{
-    height: 600px;
-    color:$color1 ;
-    font-family: $font1;
-    letter-spacing: 0.3em;
-    font-weight: 400;
-    text-transform: uppercase;
-    border-bottom: 0.2em solid orange;
-
-    @mixin text ($text-shadow, $text-align){
-        text-shadow:$text-shadow ;
-        text-align: $text-align;
-
-    }
-
-    h1{
-        font-size: 40px;
-        @include text(-3px 2px rgb(0, 0, 0),center)
-    }
-
-    p{
-        font-size: 10px;
-        @include text (-2px 2px rgba(0, 0, 0, 0.925),center)
-    }
-}
-
-
-
-/*index - fin */
-
-/*Entrenamiento - inicio */
-
-.contenedor1{
-    color: $color1;
-    font-family: $font1;
-    letter-spacing: 0.1em;
-}
-
-.tarjetas{
     width: 100%;
-    height: 100vh;
+    margin: 20px;
+    
+    ul{
+        list-style: none;   
+        text-decoration: none;
+        font-family: $font3;
+        font-size: 25px;
+    }
+
+
+
+img{
+    width: 600px;
+    height: 400px;
 }
 
-a{
-    list-style: none;
-    color: $color1;
+.btn{
+    font-family: $font3;
+    font-size:20px;
+    color: $color2;
+    border: 2px solid $color2;
 }
 
-
-h3{
-    color: $color1;
-    font-family: $font1;
 }
+/*Preguntas frecuentes*/
 
-/*Galeria*/
-
-.galeria-grid{
-    width: 100%;
-    background-color: #32ae7e ;
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
-
-    img{
-        border: 2px solid #fff;
+.preguntas-frecuentes{
+    background-color: $color1;
+    height: 150vh;
+    
+    .questions{
+        
+        justify-content: space-between;
+        
+        
     }
 }
 
-.galeria1{
-    grid-column: 1/2;
-    grid-row:1/3;
-}
-
-.galeria2{
-    grid-column: 2/3 ;
-    grid-row: 1/2;
-}
-
-.galeria3{
-    grid-column:3/5;
-    grid-row:1/2;
-} 
-
-.galeria4{
-    grid-column: 2/3;
-    grid-row: 2/4;
-}
-
-.galeria5{
-    grid-column: 3/4;
-    grid-row:2/3;
-}
-
-.galeria6{
-    grid-column: 4/5;
-    grid-row: 2/3;
-
-}
-
-.galeria7{
-    grid-column: 1/2;
-    grid-row: 3/4;
-
-}
-
-.galeria8{
-    grid-column: 3/5;
-    grid-row: 3/4;
-}
-
-
-/*Contacto*/
-.formulario{
-    margin: 1em;
+.prueba{
+    border: 3px solid black;
 }
 
 
 
 
 
-footer{
-    background-color: #8edcb9;
-    padding: 1em;
-    .redes li{
-        width: 50px;
-        margin-right: 1em;
-        list-style: none;
 
-    }
-}
+
+
+
+
+
+
+
 
 
 
