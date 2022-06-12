@@ -14,117 +14,129 @@ $font3:'Barlow Semi Condensed', sans-serif;
     box-sizing: border-box;
 }
 
+/*Nav contacto prueba*/
 
 
-.nav{
-    color: $color1;
-    display: flex;
-    justify-content: space-between;
-    
-    
+
+.nav-left{
+    text-align: center;
+    margin-top: 15px;
+
+    a{
+        text-decoration: none;
+        color: $color1;
+    }
 
     h3{
         font-family: $font1;
-        font-size: 50px;
-        color: $color1;
-        
-        span{
-            background:linear-gradient(to right bottom, $color1 ,10%, $color2 );
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color:transparent;
+        font-size: 45px;
+        text-decoration: underline $color2;
+    }
+}
+
+.nav-right{
+    font-family: $font3;
+    font-weight: 700;
+    text-align: center;
+    
+    ul{
+        list-style: none;
+        margin-top: 10px;
+        font-size: 25px;
+        a{
+            text-decoration: none;
+            color: $color1;
+            
+            li{
+                display: inline;
+                padding:8px;
+                
+            }
         }
     }
 }
 
-
-
-a{
-    display: inline-block;
-    text-decoration: none;
-    font-family: $font3;
-    font-size: 25px;
-    padding: 30px;
-    color:$color1;
-    list-style: none;
-
-
-    li{
-        text-decoration: none;
-    }
-    
-    li:hover{
-        color:#039b87;
-        font-size: 30px;
-        text-decoration: underline $color2;
-        
-    }
-}
+/*Nav contacto prueba fin*/
 
 
 
 /*PRESENTACION*/
 
-h1{
-    text-align: center;
-    font-family: $font1;
-    font-size: 1;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-p{
-    text-align: center;
-    font-family: $font3;
-    font-size: 35px;
-
-}
-
 .presentacion{
+    background-color:$color1;
+    background-image:url(/img/Ejercicio-rojo.svg), url(/img/fb-roja.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: bottom left, top right;
+    background-size:  350px, 300px;
+    padding-bottom:20px; 
     width: 100%;
-    margin: 20px;
+    height: 100vh;
+    border-top: 5px solid $color3;
+
     
-    ul{
-        list-style: none;   
-        text-decoration: none;
+}
+
+.inicio{
+    text-align: center;
+    margin-top: 250px;
+
+
+    
+    
+
+    h1{
+        font-family: $font1;
+        font-size: 60px;
+        color: #fff;
+        letter-spacing: 2px;
+    }
+
+    p{
         font-family: $font3;
         font-size: 25px;
+        font-weight: 700;
+    }
+
+    button{
+        padding: 10px;
+        border-radius: 10px;
+        background-color: $color2;
+        font-family: $font2;
     }
 
 
-
-img{
-    width: 600px;
-    height: 400px;
 }
 
-.btn{
-    font-family: $font3;
-    font-size:20px;
-    color: $color2;
-    border: 2px solid $color2;
-}
 
-}
-/*Preguntas frecuentes*/
 
-.preguntas-frecuentes{
-    background-color: $color1;
-    height: 150vh;
-    
-    .questions{
-        
-        justify-content: space-between;
-        
-        
+
+.container{
+    border-top: 5px solid $color3;
+    padding-top:20px ;
+
+    img{
+        border-radius: 20px;
+    }
+
+    h2{
+        font-family: $font2;
+        font-weight: 700;
+        text-decoration: underline $color3;
+        margin-top: 10px;
+    }
+
+    p{
+        font-family: $font3;
+    }
+
+    button{
+        font-family: $font3;
+        padding:5px;
+        border: 2px solid $color2;
+        border-radius: 8px;
+
     }
 }
-
-.prueba{
-    border: 3px solid black;
-}
-
-
 
 
 
