@@ -4,100 +4,81 @@ $color1:#00BFA6;
 $color2:#F50057;
 $color3:#F9A826;
 
-$font1:'Anton', sans-serif;
-$font2:'Nunito', sans-serif;
-$font3:'Barlow Semi Condensed', sans-serif;
+$font1:'Anton',
+sans-serif;
+$font2:'Nunito',
+sans-serif;
+$font3:'Barlow Semi Condensed',
+sans-serif;
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*Nav contacto prueba*/
-
-
-
-.nav-left{
-    text-align: center;
-    margin-top: 15px;
-
-    a{
-        text-decoration: none;
-        color: $color1;
-    }
-
-    h3{
-        font-family: $font1;
-        font-size: 45px;
-        text-decoration: underline $color2;
-    }
-}
-
-.nav-right{
-    font-family: $font3;
+.navbar-brand {
+    color: $color1 !important;
+    font-family: $font2;
     font-weight: 700;
-    text-align: center;
-    
-    ul{
-        list-style: none;
-        margin-top: 10px;
-        font-size: 25px;
-        a{
-            text-decoration: none;
-            color: $color1;
-            
-            li{
-                display: inline;
-                padding:8px;
-                
-            }
-        }
-    }
+    text-decoration: underline solid $color2;
+
+
 }
 
-/*Nav contacto prueba fin*/
+.nav-link{
+    color: $color1 !important;
+}
 
+.active{
+    color: $color2 !important;
+}
 
 
 /*PRESENTACION*/
 
-.presentacion{
-    background-color:$color1;
-    background-image:url(/img/Ejercicio-rojo.svg), url(/img/fb-roja.svg);
-    background-repeat: no-repeat,no-repeat;
+.presentacion {
+    background-color: $color1;
+    background-image: url(/img/Ejercicio-rojo.svg), url(/img/fb-roja.svg);
+    background-repeat: no-repeat, no-repeat;
     background-position: bottom left, top right;
-    background-size:  350px, 300px;
-    padding-bottom:20px; 
+    background-size: 150px, 170px;
+    padding-bottom: 20px;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     border-top: 5px solid $color3;
 
-    
+    button a{
+        color: #fff;
+    }
+
+
 }
 
-.inicio{
+.inicio {
     text-align: center;
-    margin-top: 250px;
+    margin-top: 30px;
 
 
-    
-    
 
-    h1{
+
+
+    h1 {
         font-family: $font1;
         font-size: 60px;
         color: #fff;
         letter-spacing: 2px;
+        font-weight: 700;
     }
 
-    p{
+    p {
         font-family: $font3;
         font-size: 25px;
         font-weight: 700;
     }
 
-    button{
+    button {
+        color: #ffff;
         padding: 10px;
         border-radius: 10px;
         background-color: $color2;
@@ -110,51 +91,307 @@ $font3:'Barlow Semi Condensed', sans-serif;
 
 
 
-.container{
+.container {
     border-top: 5px solid $color3;
-    padding-top:20px ;
+    padding-top: 20px;
 
-    img{
+    img {
         border-radius: 20px;
     }
 
-    h2{
+    h2 {
         font-family: $font2;
         font-weight: 700;
         text-decoration: underline $color3;
         margin-top: 10px;
     }
 
-    p{
+    p {
         font-family: $font3;
     }
 
-    button{
+    button {
         font-family: $font3;
-        padding:5px;
+        padding: 5px;
         border: 2px solid $color2;
         border-radius: 8px;
 
     }
 }
 
+.card {
+    margin-top: 20px;
+}
+
+.img {
+    background-image: url(/img/atletismo-verde.svg);
+    text-align: center;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    padding-top: 8px;
+
+    a {
+        text-decoration: none;
+        border-bottom: 2px solid #F50057;
+        color: #101010;
+        font-family: $font3;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    p {
+        font-weight: 700;
+    }
+}
+
+.img1 {
+    background-image: url(/img/Estadisticas-fit-rojo.svg);
+    text-align: center;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding-top: 8px;
+    background-size: 200px;
+
+    a {
+        text-decoration: none;
+        border-bottom: 2px solid #F50057;
+        color: #101010;
+        font-family: $font3;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    p {
+        font-weight: 700;
+    }
+}
+
+.img2 {
+    background-image: url(/img/habitos-verde.svg);
+    text-align: center;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    padding-top: 8px;
+    background-size: 200px;
+
+    a {
+        text-decoration: none;
+        border-bottom: 2px solid #F50057;
+        color: #101010;
+        font-family: $font3;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    p {
+        font-weight: 700;
+    }
+}
+
+/*Footer*/
+.pie-pagina{
+    width: 100%;
+    background-color:#101010;
+    text-align: center;
+    font-family: $font1;
+    letter-spacing: 3px;
+    color:#fff ;
+    padding-top: 10px;
+    margin-top: 10px;
+
+    h2{
+        text-decoration: underline $color2;
+        padding-bottom: 5px ;
+    }
+
+    .inc{
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+.ftnav{
+    margin-top: 10px;
+    text-align: center;
+    font-family: $font3;
+    color: #F9A826;
+
+    p:hover{
+        font-size: 20px;
+
+    }
+
+    a{
+        font-size: 40px;
+        color:#fff;
+    }
+
+}
+
+.ftnav-ul{
+    padding: 3px;
 
 
+    i{
+        font-size: 40px;
+        color: #fff;
+    }
+    ul{
+        list-style: none;
+        padding: 10px 0px;
+    }
+    a{
+        text-decoration: none;
+        color:$color3;
+        font-size: 15px;
+    }
+
+    a:hover{
+        font-size: 18px;
+
+    }
+}
+
+/*Inicio Galeria*/
+
+    .galeria{
+        width: 100%;
+        padding: 100px;
+        
+    }
+
+    .musica{
+        background-color: $color1;
+        width: 100%;
+        text-align: center;
+        font-family: $font2;
+        padding-top: 10px;
+        border-top: 4px solid $color3;
+    }
 
 
+    /*Contacto*/
+
+    .redes{
+        text-align: center;
+        
+        h2{
+            color: #101010;
+            text-transform: uppercase;
+            font-family: $font2;
+        }
+
+        a{
+            color: #F50057;
+            padding: 20px;
+            font-size: 50px;
+        }
+    }
+
+    .contacto-bg{
+        background-color: $color1;
+        background-image: url(/img/Datos-rojo.svg), url(/img/Rastreador-rojo.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: bottom left, top right;
+        background-size: 150px, 170px;
+        padding-bottom: 20px;
+        width: 100%;
+        height: 50vh;
+        border-top: 5px solid $color3;
+    }
+
+    .mapa{
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+
+        iframe{
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    }
+    
+
+@media screen and (max-width:775px) {
 
 
+    .presentacion {
+        background-color: $color1;
+        background-image: url(/img/Ejercicio-rojo.svg), url(/img/fb-roja.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: bottom left, top right;
+        background-size: 150px, 110px;
+        padding-bottom: 20px;
+        width: 100%;
+        height: 50vh;
+        border-top: 5px solid $color3;
 
 
+    }
+
+    .contacto-bg{
+        background-color: $color1;
+        background-image: url(/img/Datos-rojo.svg), url(/img/Rastreador-rojo.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: bottom left, top right;
+        background-size: 150px, 110px;
+        padding-bottom: 20px;
+        width: 100%;
+        height: 50vh;
+        border-top: 5px solid $color3;
+    }
+}
+
+@media screen and (max-width:640px) {
+
+    .presentacion {
+        background-color: $color1;
+        background-image: url(/img/Ejercicio-rojo.svg), url(/img/fb-roja.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: bottom left, bottom right;
+        background-size: 90px, 90px;
+        padding-bottom: 20px;
+        width: 100%;
+        height: 50vh;
+        border-top: 5px solid $color3;
+
+        p {
+            font-family: $font3;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        button {
+
+            border-radius: 10px;
+            background-color: $color2;
+            font-family: $font2;
+        }
 
 
+    }
 
+    .contacto-bg{
+        background-color: $color1;
+        background-image: url(/img/Datos-rojo.svg), url(/img/Rastreador-rojo.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: bottom left, bottom right;
+        background-size: 90px, 90px;
+        padding-bottom: 20px;
+        width: 100%;
+        height: 50vh;
+        border-top: 5px solid $color3;
 
-
-
-
-
-
-
-
+        p {
+            font-family: $font3;
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
+}
 

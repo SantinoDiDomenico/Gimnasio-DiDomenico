@@ -6,63 +6,42 @@
           box-sizing: border-box;
 }
 
-/*Nav contacto prueba*/
-.nav-left {
-  text-align: center;
-  margin-top: 15px;
-}
-
-.nav-left a {
-  text-decoration: none;
-  color: #00BFA6;
-}
-
-.nav-left h3 {
-  font-family: "Anton", sans-serif;
-  font-size: 45px;
-  -webkit-text-decoration: underline #F50057;
-          text-decoration: underline #F50057;
-}
-
-.nav-right {
-  font-family: "Barlow Semi Condensed", sans-serif;
+.navbar-brand {
+  color: #00BFA6 !important;
+  font-family: "Nunito", sans-serif;
   font-weight: 700;
-  text-align: center;
+  -webkit-text-decoration: underline solid #F50057;
+          text-decoration: underline solid #F50057;
 }
 
-.nav-right ul {
-  list-style: none;
-  margin-top: 10px;
-  font-size: 25px;
+.nav-link {
+  color: #00BFA6 !important;
 }
 
-.nav-right ul a {
-  text-decoration: none;
-  color: #00BFA6;
+.active {
+  color: #F50057 !important;
 }
 
-.nav-right ul a li {
-  display: inline;
-  padding: 8px;
-}
-
-/*Nav contacto prueba fin*/
 /*PRESENTACION*/
 .presentacion {
   background-color: #00BFA6;
   background-image: url(/img/Ejercicio-rojo.svg), url(/img/fb-roja.svg);
-  background-repeat: no-repeat,no-repeat;
+  background-repeat: no-repeat, no-repeat;
   background-position: bottom left, top right;
-  background-size: 350px, 300px;
+  background-size: 150px, 170px;
   padding-bottom: 20px;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   border-top: 5px solid #F9A826;
+}
+
+.presentacion button a {
+  color: #fff;
 }
 
 .inicio {
   text-align: center;
-  margin-top: 250px;
+  margin-top: 30px;
 }
 
 .inicio h1 {
@@ -70,6 +49,7 @@
   font-size: 60px;
   color: #fff;
   letter-spacing: 2px;
+  font-weight: 700;
 }
 
 .inicio p {
@@ -79,6 +59,7 @@
 }
 
 .inicio button {
+  color: #ffff;
   padding: 10px;
   border-radius: 10px;
   background-color: #F50057;
@@ -111,5 +92,262 @@
   padding: 5px;
   border: 2px solid #F50057;
   border-radius: 8px;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.img {
+  background-image: url(/img/atletismo-verde.svg);
+  text-align: center;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  padding-top: 8px;
+}
+
+.img a {
+  text-decoration: none;
+  border-bottom: 2px solid #F50057;
+  color: #101010;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.img p {
+  font-weight: 700;
+}
+
+.img1 {
+  background-image: url(/img/Estadisticas-fit-rojo.svg);
+  text-align: center;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  padding-top: 8px;
+  background-size: 200px;
+}
+
+.img1 a {
+  text-decoration: none;
+  border-bottom: 2px solid #F50057;
+  color: #101010;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.img1 p {
+  font-weight: 700;
+}
+
+.img2 {
+  background-image: url(/img/habitos-verde.svg);
+  text-align: center;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  padding-top: 8px;
+  background-size: 200px;
+}
+
+.img2 a {
+  text-decoration: none;
+  border-bottom: 2px solid #F50057;
+  color: #101010;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.img2 p {
+  font-weight: 700;
+}
+
+/*Footer*/
+.pie-pagina {
+  width: 100%;
+  background-color: #101010;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
+  color: #fff;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.pie-pagina h2 {
+  -webkit-text-decoration: underline #F50057;
+          text-decoration: underline #F50057;
+  padding-bottom: 5px;
+}
+
+.pie-pagina .inc {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ftnav {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: #F9A826;
+}
+
+.ftnav p:hover {
+  font-size: 20px;
+}
+
+.ftnav a {
+  font-size: 40px;
+  color: #fff;
+}
+
+.ftnav-ul {
+  padding: 3px;
+}
+
+.ftnav-ul i {
+  font-size: 40px;
+  color: #fff;
+}
+
+.ftnav-ul ul {
+  list-style: none;
+  padding: 10px 0px;
+}
+
+.ftnav-ul a {
+  text-decoration: none;
+  color: #F9A826;
+  font-size: 15px;
+}
+
+.ftnav-ul a:hover {
+  font-size: 18px;
+}
+
+/*Inicio Galeria*/
+.galeria {
+  width: 100%;
+  padding: 100px;
+}
+
+.musica {
+  background-color: #00BFA6;
+  width: 100%;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  padding-top: 10px;
+  border-top: 4px solid #F9A826;
+}
+
+/*Contacto*/
+.redes {
+  text-align: center;
+}
+
+.redes h2 {
+  color: #101010;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+}
+
+.redes a {
+  color: #F50057;
+  padding: 20px;
+  font-size: 50px;
+}
+
+.contacto-bg {
+  background-color: #00BFA6;
+  background-image: url(/img/Datos-rojo.svg), url(/img/Rastreador-rojo.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, top right;
+  background-size: 150px, 170px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 50vh;
+  border-top: 5px solid #F9A826;
+}
+
+.mapa {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.mapa iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media screen and (max-width: 775px) {
+  .presentacion {
+    background-color: #00BFA6;
+    background-image: url(/img/Ejercicio-rojo.svg), url(/img/fb-roja.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, top right;
+    background-size: 150px, 110px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 50vh;
+    border-top: 5px solid #F9A826;
+  }
+  .contacto-bg {
+    background-color: #00BFA6;
+    background-image: url(/img/Datos-rojo.svg), url(/img/Rastreador-rojo.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, top right;
+    background-size: 150px, 110px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 50vh;
+    border-top: 5px solid #F9A826;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .presentacion {
+    background-color: #00BFA6;
+    background-image: url(/img/Ejercicio-rojo.svg), url(/img/fb-roja.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, bottom right;
+    background-size: 90px, 90px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 50vh;
+    border-top: 5px solid #F9A826;
+  }
+  .presentacion p {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .presentacion button {
+    border-radius: 10px;
+    background-color: #F50057;
+    font-family: "Nunito", sans-serif;
+  }
+  .contacto-bg {
+    background-color: #00BFA6;
+    background-image: url(/img/Datos-rojo.svg), url(/img/Rastreador-rojo.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, bottom right;
+    background-size: 90px, 90px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 50vh;
+    border-top: 5px solid #F9A826;
+  }
+  .contacto-bg p {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
